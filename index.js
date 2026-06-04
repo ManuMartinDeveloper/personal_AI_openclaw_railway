@@ -1,8 +1,9 @@
 const { Gateway } = require('openclaw');
 
-// Initialize the core system control plane
 const gateway = new Gateway({
-    configPath: process.env.OPENCLAW_CONFIG_PATH || './openclaw.json'
+    configPath: process.env.OPENCLAW_CONFIG_PATH || './openclaw.json',
+    // Bypasses the initial setup prompt requirement for cloud hosting
+    allowUnconfigured: true
 });
 
 gateway.start().catch((err) => {

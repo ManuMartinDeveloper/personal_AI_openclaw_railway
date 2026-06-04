@@ -4,7 +4,7 @@
     "description": "Cloud hosted OpenClaw instance",
     "main": "index.js",
     "scripts": {
-        "start": "openclaw gateway --port $PORT"
+        "start": "openclaw gateway --port $PORT --allow-unconfigured"
     },
     "dependencies": {
         "openclaw": "latest"
