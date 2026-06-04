@@ -1,8 +1,8 @@
 const { Gateway } = require('openclaw');
 
 const gateway = new Gateway({
-    configPath: process.env.OPENCLAW_CONFIG_PATH || './openclaw.json',
-    // Bypasses the initial setup prompt requirement for cloud hosting
+    // Points directly to the openclaw.json file in your repository root
+    configPath: './openclaw.json',
     allowUnconfigured: true
 });
 
