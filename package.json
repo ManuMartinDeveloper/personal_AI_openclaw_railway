@@ -2,7 +2,6 @@
     "name": "openclaw-cloud-gateway",
     "version": "1.0.0",
     "description": "Cloud hosted OpenClaw instance",
-    "main": "index.js",
     "scripts": {
         "start": "openclaw gateway --port $PORT --allow-unconfigured"
     },
